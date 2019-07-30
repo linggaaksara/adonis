@@ -1,0 +1,56 @@
+@layout('crud.base')
+@yield('content')
+@include('etc.navbar')
+<section class="main-section">
+    <form>
+    <div class="content" align="center">
+        <br>
+        <br>
+        <h1>Device Setting</h1>
+        <br>
+        <label style="font-size: 25px; padding-right:277px;">Port</label>
+        <label style="font-size: 25px; padding-right: 125px;">: <select style="font-size: 17px;">
+        <option>COM1</option>
+        <option>COM2</option>
+        <option>COM3</option>
+        <option>COM4</option>
+        <option>COM5</option>
+        <option>COM6</option>
+        </select></label>
+        <br>
+        <label style="font-size: 25px; padding-right:260px;">Name</label>
+        <label style="font-size: 25px; padding-right: 100px;">: <select style="font-size: 17px;">
+        <option>VacuDAP</option>
+        <option>VacuDAP</option>
+        <option>VacuDAP</option>
+        <option>VacuDAP</option>
+        <option>VacuDAP</option>
+        <option>VacuDAP</option>
+        </select></label>
+        <br>
+        <label style="font-size: 25px;">Port per second [baud rate]</label>
+        <label style="font-size: 25px;">:</label>
+        <label style="padding-left: 5px;"><input type="" name="" value="19600" style="font-size: 17px;"></label>
+        <br>
+        <label style="font-size: 25px;">Data Bits</label>
+        <label style="font-size: 25px; padding-left: 219px;">:</label>
+        <label style="padding-left: 5px;"><input type="" name="" value="7" style="font-size: 17px;"></label>
+        <br>
+        <label style="font-size: 25px;">Parity</label>
+        <label style="font-size: 25px; padding-left: 260px;">:</label>
+        <label style="padding-left: 5px;"><input type="" name="" value="OOD" style="font-size: 17px;"></label>
+        <br>
+        <label style="font-size: 25px;">Stop Bits</label>
+        <label style="font-size: 25px; padding-left: 220px;">:</label>
+        <label style="padding-left: 5px;"><input type="" name="" value="1" style="font-size: 17px;"></label>
+        <br>
+        <label style="font-size: 25px;">Flow Control</label>
+        <label style="font-size: 25px; padding-left: 178px;">:</label>
+        <label style="padding-left: 5px;"><input type="" name="" value="Yes" style="font-size: 17px;"></label>
+        <br>
+        <button type="button" class="btn btn-secondary" style="width: 150px; height: 40px; margin-left: 400px;">OK</button>
+        <h3>Klik <a href="{{ route('Todo.page2') }}">Disini</a></h3>
+    </div>
+    </form>
+</section>
+@endyield

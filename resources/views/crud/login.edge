@@ -1,0 +1,28 @@
+@layout('crud.base')
+@yield('content')
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{{ style('css/stil.css')}}
+</head>
+<body>
+<section class="main-section">
+   <div class="login">
+    <h2 class="login-header">Sign In</h2>
+        <form class="login-container">
+            <p>
+                <input type="email" placeholder="Full Name">
+            </p>
+            <p>
+                <input type="password" placeholder="Password">
+            </p>
+            <p>
+                <button><a href="{{ route('Todo.index') }}" type="submit" value="Log in" align="right">Login</a></button>
+            </p>
+        </form>
+</div>
+</section>
+</body>
+</html>
+@endyield
